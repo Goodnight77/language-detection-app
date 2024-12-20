@@ -49,11 +49,18 @@ This project uses `pip` for dependency management.  Ensure you have Python 3.7+ 
 
 3. **Docker Build and Run (Optional):**
    ```bash
-   docker build -t ml-fastapi-app .
-   docker run -p 8000:8000 ml-fastapi-app
+   docker build -t app-name .
+   docker run -p 80:80 app-name
    ```
 
 4. **Heroku Deployment (Optional):**
    Follow Heroku's deployment guide.  The `heroku.yaml` file provides configuration for deployment.  You will need a Heroku account.
+```bash
+heroku login
+heroku create app-name
+heroku git:remote app-name
+heroku stack:set container
+git push heroku main
+```
 
 **Note:**  The trained model (`trained_pipeline-0.1.0.pkl`) is assumed to be present in the `app/model/` directory.  Ensure you have this file before running the application.  Refer to `Language Detection.ipynb` for details on model training.
