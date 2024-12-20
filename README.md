@@ -1,4 +1,4 @@
-# ML FastAPI Docker Heroku Deployment
+# Language detection APP with FastAPI and Heroku Deployment
 
 ## Project Overview
 
