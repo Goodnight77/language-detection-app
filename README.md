@@ -18,7 +18,7 @@ This project uses `pip` for dependency management.  Ensure you have Python 3.7+ 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Goodnight77/language-detection-app.git
    cd ml-fastapi-docker-heroku
    ```
 
